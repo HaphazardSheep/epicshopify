@@ -1529,3 +1529,228 @@ textarea:focus-visible {
     min-height: 360px;
   }
 }
+
+
+/* ===== Real product hero + subscription landing ===== */
+
+.sco-hero__product {
+  position: absolute;
+  z-index: 2;
+  right: 8%;
+  top: 12%;
+  width: min(29vw, 350px);
+  height: min(59vh, 520px);
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 0.62);
+  border-radius: 28px;
+  background: #f4e8e4;
+  box-shadow: 0 30px 70px rgb(36 30 26 / 0.20);
+  transform: rotate(6deg);
+}
+
+.sco-hero__product img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 500ms cubic-bezier(.2,.7,.2,1);
+}
+
+.sco-hero__product::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgb(0 0 0 / 0.62) 100%);
+}
+
+.sco-hero__product span {
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  right: 18px;
+  bottom: 17px;
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.sco-hero__product:hover {
+  color: #fff;
+}
+
+.sco-hero__product:hover img {
+  transform: scale(1.045);
+}
+
+.sco-subscribe-page {
+  min-height: 70vh;
+  padding: clamp(44px, 7vw, 88px) max(20px, calc((100% - 1180px) / 2)) 100px;
+  background: var(--sco-cream);
+}
+
+.sco-subscribe-page__hero {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sco-subscribe-page__hero h1 {
+  margin: 0;
+  color: var(--sco-ink);
+  font-size: clamp(3.2rem, 8vw, 8rem);
+  line-height: 0.84;
+  letter-spacing: -0.07em;
+}
+
+.sco-subscribe-page__hero h1 em {
+  color: var(--sco-blush-deep);
+  font-style: normal;
+}
+
+.sco-subscribe-page__hero > p:last-child {
+  max-width: 620px;
+  margin: 24px auto 0;
+  color: var(--sco-muted);
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+.sco-subscribe-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 52px;
+}
+
+.sco-subscribe-page__card {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  border-radius: 24px;
+  background: var(--sco-cream-deep);
+  color: #fff;
+  text-decoration: none;
+}
+
+.sco-subscribe-page__card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 450ms ease;
+}
+
+.sco-subscribe-page__card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 38%, rgb(0 0 0 / 0.82) 100%);
+}
+
+.sco-subscribe-page__card > div {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 24px;
+}
+
+.sco-subscribe-page__card small,
+.sco-subscribe-page__card span {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sco-subscribe-page__card strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.sco-subscribe-page__card:hover {
+  color: #fff;
+}
+
+.sco-subscribe-page__card:hover img {
+  transform: scale(1.05);
+}
+
+.sco-subscribe-page__empty {
+  grid-column: 1 / -1;
+  padding: 60px 28px;
+  border-radius: 24px;
+  background: var(--sco-ink);
+  color: #fff;
+  text-align: center;
+}
+
+.sco-subscribe-page__empty strong {
+  display: block;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.sco-subscribe-page__empty p {
+  max-width: 560px;
+  margin: 18px auto 26px;
+  color: rgb(255 255 255 / 0.70);
+  line-height: 1.55;
+}
+
+.sco-subscribe-page__empty .sco-btn {
+  width: auto;
+}
+
+/* Give Shopify's subscription widget the same visual language when enabled. */
+.selling_plan_app_container,
+.shopify-payment-button {
+  margin-top: 12px;
+}
+
+.selling_plan_app_container {
+  padding: 16px;
+  border: 1px solid var(--sco-line);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.selling_plan_app_container input[type='radio'] {
+  accent-color: var(--sco-ink);
+}
+
+.selling_plan_app_container label {
+  color: var(--sco-ink);
+}
+
+@media screen and (max-width: 749px) {
+  .sco-hero__product {
+    width: 45vw;
+    height: 51vh;
+    right: 2%;
+    top: 12%;
+    opacity: 0.9;
+  }
+
+  .sco-hero__stamp {
+    right: 4%;
+    bottom: 10%;
+  }
+
+  .sco-subscribe-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sco-subscribe-page__card {
+    min-height: 430px;
+  }
+}
