@@ -193,17 +193,27 @@
     "sco_hero": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<section class=\"sco-hero\" aria-labelledby=\"sco-hero-title\">\n  <div class=\"sco-hero__inner\">\n    <p class=\"sco-kicker\">SPECTRAL &amp; CO / BEAUTY</p>\n    <h1 id=\"sco-hero-title\">BEAUTY, <em>CURATED.</em></h1>\n    <p class=\"sco-hero__lede\">A thoughtfully selected edit of beauty essentials, made simple to discover and easy to love.</p>\n    <div class=\"sco-hero__actions\">\n      <a class=\"sco-btn sco-btn--primary\" href=\"{{ routes.all_products_collection_url }}\">SHOP ALL</a>\n      <a class=\"sco-btn sco-btn--secondary\" href=\"{{ routes.search_url }}\">FIND YOUR BEAUTY</a>\n    </div>\n    <div class=\"sco-hero__details\">\n      <div class=\"sco-hero__detail\"><strong>01 / DISCOVER</strong><span>Browse a focused beauty edit.</span></div>\n      <div class=\"sco-hero__detail\"><strong>02 / CHOOSE</strong><span>Clear products, clear choices.</span></div>\n      <div class=\"sco-hero__detail\"><strong>03 / CHECK OUT</strong><span>Fast, secure Shopify checkout.</span></div>\n    </div>\n  </div>\n</section>",
+        "custom_liquid": "<section class=\"sco-hero\" aria-labelledby=\"sco-hero-title\">\n  <div class=\"sco-hero__inner\">\n    <div>\n      <p class=\"sco-kicker\">SPECTRAL &amp; CO / THE BEAUTY EDIT</p>\n      <h1 id=\"sco-hero-title\">BEAUTY, <em>CURATED.</em></h1>\n      <p class=\"sco-hero__lede\">The good stuff, without the endless scrolling. Discover a considered edit of beauty made for everyday rituals, little luxuries, and everything in between.</p>\n      <div class=\"sco-hero__actions\">\n        <a class=\"sco-btn sco-btn--primary\" href=\"{{ routes.all_products_collection_url }}\">EXPLORE THE EDIT</a>\n        <a class=\"sco-btn sco-btn--secondary\" href=\"{{ routes.search_url }}\">SEARCH BEAUTY</a>\n      </div>\n      <div class=\"sco-hero__details\">\n        <div class=\"sco-hero__detail\"><strong>EDITED</strong><span>Less noise. Better finds.</span></div>\n        <div class=\"sco-hero__detail\"><strong>BEAUTIFUL</strong><span>Designed to look as good as it feels.</span></div>\n        <div class=\"sco-hero__detail\"><strong>SIMPLE</strong><span>Quick shopping from browse to checkout.</span></div>\n      </div>\n    </div>\n    <div class=\"sco-floating-note\"><strong>THE NEW OBSESSION</strong><span>Fresh beauty finds, standout staples, and easy-to-love favorites.</span></div>\n  </div>\n</section>",
         "background_color": "",
         "section_width": "full-width",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
-    "sco_shop": {
+    "sco_marquee": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<section class=\"sco-section\" aria-labelledby=\"sco-shop-title\">\n  <p class=\"sco-eyebrow\">01 / SHOP</p>\n  <h2 id=\"sco-shop-title\">START WITH WHAT YOU NEED.</h2>\n  <div class=\"sco-shop-grid\">\n    <a class=\"sco-shop-card\" href=\"{{ routes.all_products_collection_url }}\"><small>THE EDIT</small><div><h3>Shop Beauty</h3><p>Explore the full collection.</p></div></a>\n    <a class=\"sco-shop-card\" href=\"/collections/all?sort_by=best-selling\"><small>WHAT’S LOVED</small><div><h3>Bestsellers</h3><p>See the products customers come back for.</p></div></a>\n    <a class=\"sco-shop-card\" href=\"/collections/all?sort_by=created-descending\"><small>JUST IN</small><div><h3>New Arrivals</h3><p>Fresh additions to the beauty edit.</p></div></a>\n  </div>\n</section>",
+        "custom_liquid": "<div class=\"sco-marquee\" aria-hidden=\"true\"><div class=\"sco-marquee__track\"><span>BEAUTY EDITS</span><span>NEW FINDS</span><span>EVERYDAY ESSENTIALS</span><span>GLOW TIME</span><span>SELF CARE</span><span>BEAUTY EDITS</span><span>NEW FINDS</span><span>EVERYDAY ESSENTIALS</span><span>GLOW TIME</span><span>SELF CARE</span></div></div>",
+        "background_color": "",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "sco_discover": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"sco-section\" aria-labelledby=\"sco-discover-title\">\n  <p class=\"sco-eyebrow\">01 / DISCOVER</p>\n  <h2 id=\"sco-discover-title\">SHOP BY WHAT YOU’RE IN THE MOOD FOR.</h2>\n  <div class=\"sco-editorial\">\n    <a class=\"sco-editorial__feature\" href=\"{{ routes.all_products_collection_url }}\"><small>THE FULL EDIT</small><div><h3>Everything worth adding to your routine.</h3><p>Explore the complete Spectral &amp; Co beauty collection and find your next favorite.</p></div></a>\n    <div class=\"sco-editorial__stack\">\n      <a class=\"sco-editorial__mini\" href=\"/collections/all?sort_by=best-selling\"><small>01 / CUSTOMER FAVORITES</small><h3>Best<br>selling.</h3></a>\n      <a class=\"sco-editorial__mini\" href=\"/collections/all?sort_by=created-descending\"><small>02 / FRESH IN</small><h3>New<br>in.</h3></a>\n    </div>\n  </div>\n</section>",
         "background_color": "",
         "section_width": "page-width",
         "padding-block-start": 0,
@@ -213,7 +223,7 @@
     "sco_routine": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<section class=\"sco-section--rose\" aria-labelledby=\"sco-routine-title\">\n  <div class=\"sco-section\">\n    <p class=\"sco-eyebrow\">02 / THE EXPERIENCE</p>\n    <div class=\"sco-routine\">\n      <div class=\"sco-routine__copy\">\n        <h2 id=\"sco-routine-title\">LESS SCROLLING.<br>MORE FINDING.</h2>\n        <p>Designed to keep the shopping journey simple: discover a product, understand it quickly, add it to your cart, and check out without friction.</p>\n      </div>\n      <div class=\"sco-routine__list\">\n        <div class=\"sco-routine__item\"><strong>01</strong><span>Large, clean product imagery</span></div>\n        <div class=\"sco-routine__item\"><strong>02</strong><span>Easy-to-scan product information</span></div>\n        <div class=\"sco-routine__item\"><strong>03</strong><span>Quick add + accelerated checkout</span></div>\n        <div class=\"sco-routine__item\"><strong>04</strong><span>Mobile-first purchase flow</span></div>\n      </div>\n    </div>\n  </div>\n</section>",
+        "custom_liquid": "<section class=\"sco-section--rose\" aria-labelledby=\"sco-routine-title\">\n  <div class=\"sco-section\">\n    <p class=\"sco-eyebrow\">02 / THE EXPERIENCE</p>\n    <div class=\"sco-routine\">\n      <div class=\"sco-routine__copy\">\n        <h2 id=\"sco-routine-title\">A BEAUTY SHOP THAT GETS OUT OF YOUR WAY.</h2>\n        <p>Big imagery. Clear choices. Quick add. A cart that stays close by. Everything is designed to help you find the right product and move on with your day.</p>\n        <a class=\"sco-btn sco-btn--primary\" href=\"{{ routes.all_products_collection_url }}\">START SHOPPING</a>\n      </div>\n      <div class=\"sco-routine__list\">\n        <div class=\"sco-routine__item\"><strong>01</strong><span>Clean, high-impact product presentation</span></div>\n        <div class=\"sco-routine__item\"><strong>02</strong><span>Easy-to-scan product information</span></div>\n        <div class=\"sco-routine__item\"><strong>03</strong><span>Quick Add for faster browsing</span></div>\n        <div class=\"sco-routine__item\"><strong>04</strong><span>Fast checkout with Shopify payment options</span></div>\n      </div>\n    </div>\n    <div class=\"sco-social-strip\"><div><strong>YOUR NEXT FAVORITE MIGHT BE ONE CLICK AWAY.</strong><span>Browse the edit, save your favorites, and keep your routine moving.</span></div><a class=\"sco-btn sco-btn--secondary\" href=\"{{ routes.all_products_collection_url }}\">SHOP NOW</a></div>\n  </div>\n</section>",
         "background_color": "",
         "section_width": "full-width",
         "padding-block-start": 0,
@@ -223,7 +233,8 @@
   },
   "order": [
     "sco_hero",
-    "sco_shop",
+    "sco_marquee",
+    "sco_discover",
     "product_list_fa6P9H",
     "sco_routine"
   ]
