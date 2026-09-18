@@ -2907,3 +2907,131 @@ html, body, .page-wrapper {
 .sco-hero__orb {
   pointer-events: none;
 }
+
+
+/* ===== KYNZA cart + purchase assurance pass ===== */
+
+.kynza-product-assurances {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  padding-top: 6px;
+}
+
+.kynza-product-assurances span {
+  color: #554a43;
+  font-size: 0.59rem;
+  font-weight: 850;
+  letter-spacing: 0.10em;
+}
+
+.kynza-product-assurances span::before {
+  content: '✦';
+  margin-right: 5px;
+  color: #8f4f49;
+}
+
+.cart-page {
+  background:
+    radial-gradient(circle at 12% 4%, rgb(217 170 165 / 0.12), transparent 22%),
+    #faf6f1;
+}
+
+.cart-page__title .cart-title {
+  color: #17120f !important;
+}
+
+.cart-page__title .cart-title h1,
+.cart-page__title .cart-title .h1 {
+  color: #17120f !important;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.85;
+  font-weight: 900;
+  letter-spacing: -0.065em;
+}
+
+.cart-page__summary {
+  overflow: hidden;
+  border: 1px solid rgb(23 18 15 / 0.10);
+  border-radius: 24px;
+  background: #efe3dd !important;
+  box-shadow: 0 18px 46px rgb(23 18 15 / 0.08);
+}
+
+.cart-page__summary .cart__summary-totals,
+.cart-page__summary .cart__checkout-button,
+.cart-page__summary .button {
+  color: #17120f !important;
+}
+
+.cart-page__summary .cart__checkout-button {
+  background: #17120f !important;
+  color: #fff !important;
+}
+
+.cart-page__summary .cart__checkout-button:hover {
+  background: #362b25 !important;
+}
+
+.cart-page__items .cart-items__table-row {
+  border-color: rgb(23 18 15 / 0.12);
+}
+
+.cart-page__items img {
+  border-radius: 16px;
+}
+
+.cart-page__items a,
+.cart-page__items .price,
+.cart-page__items .price-item {
+  color: #17120f !important;
+}
+
+.cart-drawer .theme-drawer__dialog {
+  background: #faf6f1;
+  color: #17120f;
+}
+
+.cart-drawer .theme-drawer__header,
+.cart-drawer .theme-drawer__title,
+.cart-drawer .theme-drawer__close-button,
+.cart-drawer .cart-item__name,
+.cart-drawer .price,
+.cart-drawer .price-item {
+  color: #17120f !important;
+}
+
+.cart-drawer .cart-drawer__summary {
+  border-top: 1px solid rgb(23 18 15 / 0.12);
+}
+
+.cart-drawer .cart__checkout-button {
+  background: #17120f !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  min-height: 58px;
+  font-weight: 850;
+}
+
+.cart-drawer .cart__checkout-button:hover {
+  background: #362b25 !important;
+}
+
+@media screen and (max-width: 749px) {
+  .kynza-product-assurances {
+    gap: 7px 11px;
+  }
+
+  .kynza-product-assurances span {
+    font-size: 0.55rem;
+  }
+
+  .cart-page__summary {
+    border-radius: 20px;
+  }
+
+  .cart-page__title .cart-title h1,
+  .cart-page__title .cart-title .h1 {
+    font-size: 3.35rem;
+  }
+}
