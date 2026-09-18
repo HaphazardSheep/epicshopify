@@ -4,7 +4,7 @@
  *
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
+ * made in the Shopify admin may be overwritten.
  * ------------------------------------------------------------
  */{
   "sections": {
@@ -15,7 +15,7 @@
           "type": "_cart-title",
           "static": true,
           "settings": {
-            "title": "Cart",
+            "title": "YOUR BAG",
             "show_count": true,
             "type_preset": "h4",
             "alignment": "left",
@@ -33,7 +33,7 @@
             "gap": 24,
             "image_ratio": "portrait",
             "dividers": true,
-            "vendor": false,
+            "vendor": true,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -46,7 +46,7 @@
           "static": true,
           "settings": {
             "extend_summary": true,
-            "background_color": "{{ settings.color_palette.color2 }}",
+            "background_color": "#EFE3DD",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -101,7 +101,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>You may also like</h3>",
+                "text": "<h3>KEEP SHOPPING.</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -235,7 +235,7 @@
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
+        "columns_gap": 14,
         "rows_gap": 24,
         "icons_style": "arrow",
         "icons_shape": "none",
