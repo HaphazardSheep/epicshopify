@@ -3035,3 +3035,74 @@ html, body, .page-wrapper {
     font-size: 3.35rem;
   }
 }
+
+
+/* Product-card finishing details */
+.kynza-card-vendor {
+  margin: 0;
+  color: #8f4f49 !important;
+  font-size: 0.59rem !important;
+  font-weight: 850 !important;
+  line-height: 1.1;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.quick-add button.quick-add__button,
+button.quick-add__button {
+  background: #17120f !important;
+  color: #fff !important;
+  border-color: #17120f !important;
+  box-shadow: 0 8px 20px rgb(23 18 15 / 0.18);
+}
+
+.quick-add button.quick-add__button:hover,
+button.quick-add__button:hover {
+  background: #8f4f49 !important;
+  border-color: #8f4f49 !important;
+  color: #fff !important;
+}
+
+.quick-add button.quick-add__button .add-to-cart-text__content,
+button.quick-add__button .add-to-cart-text__content {
+  color: #fff !important;
+}
+
+.menu-list__link {
+  color: #17120f !important;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+}
+
+.menu-list__link:hover,
+.menu-list__link--active {
+  color: #8f4f49 !important;
+}
+
+.header-logo {
+  letter-spacing: -0.04em;
+}
+
+@media screen and (min-width: 750px) {
+  .header-logo {
+    font-size: 1.08rem;
+    font-weight: 850;
+  }
+
+  .menu-list__link {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+/* Mobile bottom action area keeps the page content from being obscured. */
+@media screen and (max-width: 749px) {
+  .product-form-buttons {
+    bottom: 8px;
+  }
+
+  body:has(.product-form-buttons) .product-information {
+    padding-bottom: 24px;
+  }
+}
