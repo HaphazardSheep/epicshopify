@@ -160,12 +160,39 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "product_vendor_kynza": {
+              "type": "text",
+              "name": "KYNZA vendor",
+              "settings": {
+                "text": "{% if closest.product.vendor != blank %}<p class=\"kynza-card-vendor\">{{ closest.product.vendor | escape }}</p>{% endif %}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.66rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "product_card_gallery_677WP3",
+            "product_vendor_kynza",
             "product_title_YXxMTj",
-            "price_JQzVV4"
+            "price_JQzVV4",
+            "product_vendor_kynza"
           ]
         }
       },
