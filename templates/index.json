@@ -174,19 +174,19 @@
         "collection": "all",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 8,
-        "columns": 4,
+        "max_products": 10,
+        "columns": 5,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 14,
-        "rows_gap": 30,
+        "columns_gap": 16,
+        "rows_gap": 34,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 70,
+        "padding-block-start": 0,
         "padding-block-end": 78
       }
     },
@@ -203,7 +203,7 @@
     "sco_discover": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<section class=\"sco-section\" aria-labelledby=\"sco-discover-title\">\n  <div class=\"sco-section__heading\">\n    <div>\n      <p class=\"sco-eyebrow\">01 / DISCOVER</p>\n      <h2 id=\"sco-discover-title\">SHOP BY WHAT YOU’RE IN THE MOOD FOR.</h2>\n    </div>\n    <a class=\"sco-text-link\" href=\"{{ routes.all_products_collection_url }}\">VIEW EVERYTHING →</a>\n  </div>\n  <div class=\"sco-mood-grid\">\n    <a class=\"sco-mood-card sco-mood-card--tall\" href=\"{{ routes.search_url }}?q=skincare\">\n      <span>SKIN</span><strong>Reset.<br>Replenish.<br>Glow.</strong><small>Shop skincare →</small>\n    </a>\n    <a class=\"sco-mood-card\" href=\"{{ routes.search_url }}?q=makeup\">\n      <span>MAKEUP</span><strong>A little<br>more.</strong><small>Shop makeup →</small>\n    </a>\n    <a class=\"sco-mood-card sco-mood-card--dark\" href=\"/collections/all?sort_by=best-selling\">\n      <span>THE EDIT</span><strong>Customer<br>favorites.</strong><small>See bestsellers →</small>\n    </a>\n    <a class=\"sco-mood-card\" href=\"/collections/all?sort_by=created-descending\">\n      <span>JUST IN</span><strong>Newness,<br>right this way.</strong><small>Shop new in →</small>\n    </a>\n  </div>\n</section>",
+        "custom_liquid": "{% assign mood1 = collections.all.products[0] %}{% assign mood2 = collections.all.products[1] %}{% assign mood3 = collections.all.products[2] %}{% assign mood4 = collections.all.products[3] %}\n<section class=\"sco-section sco-moods\" aria-labelledby=\"sco-discover-title\">\n  <div class=\"sco-section__heading\">\n    <div><p class=\"sco-eyebrow\">01 / SHOP THE MOOD</p><h2 id=\"sco-discover-title\">WHAT ARE WE INTO<br><em>RIGHT NOW?</em></h2></div>\n    <a class=\"sco-text-link\" href=\"{{ routes.all_products_collection_url }}\">VIEW EVERYTHING →</a>\n  </div>\n  <div class=\"sco-mood-grid\">\n    <a class=\"sco-mood-card sco-mood-card--tall\" href=\"{{ routes.search_url }}?q=skincare\"{% if mood1.featured_image %} style=\"--mood-image: url('{{ mood1.featured_image | image_url: width: 1200 }}')\"{% endif %}>\n      <span>01 / SKIN</span><strong>Reset.<br>Replenish.<br>Glow.</strong><small>Shop skincare →</small>\n    </a>\n    <a class=\"sco-mood-card\" href=\"{{ routes.search_url }}?q=makeup\"{% if mood2.featured_image %} style=\"--mood-image: url('{{ mood2.featured_image | image_url: width: 900 }}')\"{% endif %}>\n      <span>02 / MAKEUP</span><strong>A little<br>more.</strong><small>Shop makeup →</small>\n    </a>\n    <a class=\"sco-mood-card sco-mood-card--dark\" href=\"/collections/all?sort_by=best-selling\"{% if mood3.featured_image %} style=\"--mood-image: url('{{ mood3.featured_image | image_url: width: 900 }}')\"{% endif %}>\n      <span>03 / THE EDIT</span><strong>Customer<br>favorites.</strong><small>See bestsellers →</small>\n    </a>\n    <a class=\"sco-mood-card\" href=\"/collections/all?sort_by=created-descending\"{% if mood4.featured_image %} style=\"--mood-image: url('{{ mood4.featured_image | image_url: width: 900 }}')\"{% endif %}>\n      <span>04 / JUST IN</span><strong>Newness,<br>right this way.</strong><small>Shop new in →</small>\n    </a>\n  </div>\n</section>",
         "background_color": "",
         "section_width": "page-width",
         "padding-block-start": 0,
@@ -239,9 +239,20 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "sco_intro": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"sco-intro\" aria-labelledby=\"sco-intro-title\">\n  <div class=\"sco-intro__top\">\n    <p class=\"sco-eyebrow\">WELCOME TO SPECTRAL &amp; CO</p>\n    <span>BEAUTY, WITHOUT THE NOISE.</span>\n  </div>\n  <div class=\"sco-intro__body\">\n    <h2 id=\"sco-intro-title\">A CURATED PLACE FOR THE PRODUCTS YOU’LL ACTUALLY <em>LOVE.</em></h2>\n    <p>We hunt for the beautiful, the clever, and the genuinely useful — then put the good stuff in one place. Discover new favorites, restock your essentials, and build a routine that feels like you.</p>\n  </div>\n</section>",
+        "background_color": "",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
+    "sco_intro",
     "sco_hero",
     "sco_discover",
     "sco_visuals",
