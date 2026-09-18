@@ -3161,3 +3161,35 @@ button.quick-add__button .add-to-cart-text__content {
   position: absolute;
   z-index: -1;
 }
+
+/* Final performance/micro-interaction pass */
+.ui-test-product-list {
+  content-visibility: auto;
+  contain-intrinsic-size: 920px;
+}
+
+button,
+.sco-btn,
+.menu-list__link,
+.quick-add__button {
+  touch-action: manipulation;
+}
+
+.sco-lookbook__card img,
+.sco-mood-card__image,
+.sco-subscribe__card img {
+  backface-visibility: hidden;
+}
+
+@media screen and (max-width: 749px) {
+  .sco-hero__product {
+    will-change: auto;
+  }
+}
+
+@supports (content-visibility: auto) {
+  .kynza-product-story,
+  .product-recommendations {
+    contain: layout style paint;
+  }
+}
