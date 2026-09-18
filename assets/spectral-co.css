@@ -2739,11 +2739,6 @@ html, body, .page-wrapper {
   overflow: hidden;
 }
 
-.template-collection results-list {
-  content-visibility: auto;
-  contain-intrinsic-size: 1100px;
-}
-
 /* Below-the-fold sections: reduce offscreen rendering without removing content. */
 .sco-lookbook-section,
 .sco-subscribe,
