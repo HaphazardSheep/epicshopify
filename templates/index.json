@@ -1,96 +1,9 @@
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
  * ------------------------------------------------------------
  */{
   "sections": {
-    "hero_jVaWmY": {
-      "type": "hero",
-      "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "text_color": "{{ settings.color_palette.background }}",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-custom",
-            "custom_button_background": "rgba(0,0,0,0)",
-            "custom_button_text": "{{ settings.color_palette.background }}",
-            "custom_button_border": "{{ settings.color_palette.background }}",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
-      "name": "t:names.hero",
-      "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "background_color": "rgba(0,0,0,0)",
-        "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
-      }
-    },
     "product_list_fa6P9H": {
       "type": "product-list",
       "blocks": {
@@ -130,11 +43,11 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h2>BEAUTY EDITS</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -154,7 +67,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "SHOP ALL",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -265,21 +178,53 @@
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "rows_gap": 24,
+        "columns_gap": 14,
+        "rows_gap": 30,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "background_color": "{{ settings.color_palette.background }}",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 70,
+        "padding-block-end": 78
+      }
+    },
+    "sco_hero": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"sco-hero\" aria-labelledby=\"sco-hero-title\">\n  <div class=\"sco-hero__inner\">\n    <p class=\"sco-kicker\">SPECTRAL &amp; CO / BEAUTY</p>\n    <h1 id=\"sco-hero-title\">BEAUTY, <em>CURATED.</em></h1>\n    <p class=\"sco-hero__lede\">A thoughtfully selected edit of beauty essentials, made simple to discover and easy to love.</p>\n    <div class=\"sco-hero__actions\">\n      <a class=\"sco-btn sco-btn--primary\" href=\"{{ routes.all_products_collection_url }}\">SHOP ALL</a>\n      <a class=\"sco-btn sco-btn--secondary\" href=\"{{ routes.search_url }}\">FIND YOUR BEAUTY</a>\n    </div>\n    <div class=\"sco-hero__details\">\n      <div class=\"sco-hero__detail\"><strong>01 / DISCOVER</strong><span>Browse a focused beauty edit.</span></div>\n      <div class=\"sco-hero__detail\"><strong>02 / CHOOSE</strong><span>Clear products, clear choices.</span></div>\n      <div class=\"sco-hero__detail\"><strong>03 / CHECK OUT</strong><span>Fast, secure Shopify checkout.</span></div>\n    </div>\n  </div>\n</section>",
+        "background_color": "",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "sco_shop": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"sco-section\" aria-labelledby=\"sco-shop-title\">\n  <p class=\"sco-eyebrow\">01 / SHOP</p>\n  <h2 id=\"sco-shop-title\">START WITH WHAT YOU NEED.</h2>\n  <div class=\"sco-shop-grid\">\n    <a class=\"sco-shop-card\" href=\"{{ routes.all_products_collection_url }}\"><small>THE EDIT</small><div><h3>Shop Beauty</h3><p>Explore the full collection.</p></div></a>\n    <a class=\"sco-shop-card\" href=\"/collections/all?sort_by=best-selling\"><small>WHAT’S LOVED</small><div><h3>Bestsellers</h3><p>See the products customers come back for.</p></div></a>\n    <a class=\"sco-shop-card\" href=\"/collections/all?sort_by=created-descending\"><small>JUST IN</small><div><h3>New Arrivals</h3><p>Fresh additions to the beauty edit.</p></div></a>\n  </div>\n</section>",
+        "background_color": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "sco_routine": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"sco-section--rose\" aria-labelledby=\"sco-routine-title\">\n  <div class=\"sco-section\">\n    <p class=\"sco-eyebrow\">02 / THE EXPERIENCE</p>\n    <div class=\"sco-routine\">\n      <div class=\"sco-routine__copy\">\n        <h2 id=\"sco-routine-title\">LESS SCROLLING.<br>MORE FINDING.</h2>\n        <p>Designed to keep the shopping journey simple: discover a product, understand it quickly, add it to your cart, and check out without friction.</p>\n      </div>\n      <div class=\"sco-routine__list\">\n        <div class=\"sco-routine__item\"><strong>01</strong><span>Large, clean product imagery</span></div>\n        <div class=\"sco-routine__item\"><strong>02</strong><span>Easy-to-scan product information</span></div>\n        <div class=\"sco-routine__item\"><strong>03</strong><span>Quick add + accelerated checkout</span></div>\n        <div class=\"sco-routine__item\"><strong>04</strong><span>Mobile-first purchase flow</span></div>\n      </div>\n    </div>\n  </div>\n</section>",
+        "background_color": "",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "sco_hero",
+    "sco_shop",
+    "product_list_fa6P9H",
+    "sco_routine"
   ]
 }
