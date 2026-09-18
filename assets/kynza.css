@@ -2447,3 +2447,98 @@ html, body, .page-wrapper {
     font-size: 1.75rem;
   }
 }
+
+/* ===== KYNZA accessibility + contrast override ===== */
+:root {
+  --sco-ink: #17120f;
+  --sco-ink-soft: #332b26;
+  --sco-muted: #50473f;
+  --sco-line: #c8bbb1;
+  --sco-blush-deep: #8f4f49;
+}
+.sco-intro__body p,
+.sco-section__aside,
+.sco-hero__lede,
+.sco-routine__copy p,
+.sco-hero__detail span,
+.sco-social-strip span,
+.sco-subscribe__setup p {
+  color: #403730 !important;
+  opacity: 1 !important;
+}
+.sco-eyebrow,
+.sco-intro__top > span,
+.sco-intro__type {
+  color: #2d2621 !important;
+  opacity: 1 !important;
+}
+.sco-mood-card span,
+.sco-mood-card strong,
+.sco-mood-card small {
+  color: #fff !important;
+  text-shadow: 0 2px 18px rgb(0 0 0 / 0.55);
+}
+.sco-mood-card::after {
+  color: #fff !important;
+  border-color: rgb(255 255 255 / 0.75);
+  background: rgb(0 0 0 / 0.25);
+}
+.resource-list__item .product-title,
+.resource-list__item .product-title a,
+.resource-list__item .product-card__title,
+.resource-list__item .product-card__title a,
+.resource-list__item .price,
+.resource-list__item .price-item {
+  color: #17120f !important;
+  opacity: 1 !important;
+}
+.sco-subscribe .sco-eyebrow,
+.sco-subscribe__copy .sco-eyebrow,
+.sco-subscribe__perks span,
+.sco-subscribe__card strong,
+.sco-subscribe__card span,
+.sco-subscribe__card small {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+.sco-subscribe__card strong {
+  text-shadow: 0 2px 18px rgb(0 0 0 / 0.55);
+}
+.sco-btn--light {
+  color: #17120f !important;
+}
+.sco-hero__product span,
+.sco-hero__stamp {
+  text-shadow: 0 2px 16px rgb(0 0 0 / 0.35);
+}
+.shopify-section-group-footer,
+.shopify-section-group-footer a,
+.shopify-section-group-footer h2,
+.shopify-section-group-footer p,
+.shopify-section-group-footer label,
+.shopify-section-group-footer span {
+  color: #fff !important;
+}
+.shopify-section-group-footer input {
+  color: #fff !important;
+  border-color: rgb(255 255 255 / 0.48) !important;
+  background: rgb(255 255 255 / 0.10) !important;
+}
+.shopify-section-group-footer input::placeholder {
+  color: rgb(255 255 255 / 0.72) !important;
+}
+.sco-marquee--top .sco-marquee__track a,
+.sco-marquee--top .sco-marquee__track a:hover {
+  color: #fff !important;
+}
+@media (prefers-contrast: more) {
+  .sco-mood-card::before {
+    opacity: 0.9;
+  }
+  .sco-hero__lede,
+  .sco-intro__body p,
+  .sco-section__aside,
+  .sco-routine__copy p {
+    color: #201a16 !important;
+  }
+}
