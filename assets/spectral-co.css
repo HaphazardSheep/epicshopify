@@ -2542,3 +2542,88 @@ html, body, .page-wrapper {
     color: #201a16 !important;
   }
 }
+
+/* ===== KYNZA performance + product polish ===== */
+
+/* Prevent transition-heavy styling from affecting initial paint. */
+.sco-hero__product img,
+.sco-lookbook__card img,
+.sco-subscribe__card img {
+  will-change: auto;
+}
+
+/* Product-page media: polished frame with clear separation. */
+.product-information__media .product-media {
+  border-radius: var(--sco-radius) !important;
+  overflow: hidden;
+}
+
+.product-information__media .product-media__image {
+  display: block;
+}
+
+/* Product details as a compact editorial card without trapping the page in a box. */
+@media screen and (min-width: 750px) {
+  .product-details {
+    padding: 10px 4px 20px !important;
+  }
+
+  .product-details > .group-block {
+    max-width: 100%;
+  }
+
+  .product-information__grid--limit-details .product-details > .group-block {
+    max-width: 35rem;
+  }
+}
+
+/* Cleaner product purchase area. */
+.product-details .product-form-buttons {
+  margin-top: 4px;
+}
+
+.product-details .shopify-payment-button__button {
+  min-height: 56px;
+  border-radius: 999px !important;
+}
+
+.product-details .shopify-payment-button__button--unbranded {
+  background: #17120f !important;
+  color: #faf6f1 !important;
+}
+
+/* Make the quantity control feel like part of the same system. */
+.product-details .quantity-selector {
+  border-radius: 999px !important;
+  border-color: #bdaea3 !important;
+  background: #fff !important;
+}
+
+.product-details .quantity-selector input {
+  color: #17120f !important;
+  font-weight: 750;
+}
+
+/* Better desktop recommendation shelf. */
+.product-recommendations {
+  border-top: 1px solid rgb(23 18 15 / 0.10);
+}
+
+.product-recommendations .resource-list__item {
+  min-width: 0;
+}
+
+/* Homepage image wrappers should never create accidental overflow. */
+.sco-hero__product,
+.sco-lookbook__card,
+.sco-subscribe__card {
+  contain: paint;
+}
+
+/* Reduced motion also turns off marquee movement. */
+@media (prefers-reduced-motion: reduce) {
+  .sco-marquee--top .sco-marquee__track {
+    animation: none !important;
+    transform: none !important;
+  }
+}
