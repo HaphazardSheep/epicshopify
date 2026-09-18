@@ -1,5 +1,5 @@
 /*
- * Spectral & Co — Beauty storefront custom layer
+ * KYNZA — Beauty storefront custom layer
  * Horizon 4.1.4 compatible. Loaded after the base theme CSS.
  */
 
@@ -560,7 +560,7 @@ textarea:focus-visible {
 }
 
 
-/* ===== Spectral & Co — elevated editorial layer ===== */
+/* ===== KYNZA — elevated editorial layer ===== */
 
 .sco-hero {
   min-height: min(760px, calc(100svh - 110px));
@@ -901,7 +901,7 @@ textarea:focus-visible {
 }
 
 
-/* ===== Spectral & Co — 100x cooler storefront pass ===== */
+/* ===== KYNZA — 100x cooler storefront pass ===== */
 
 .sco-marquee--top {
   position: relative;
