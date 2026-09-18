@@ -3106,3 +3106,14 @@ button.quick-add__button .add-to-cart-text__content {
     padding-bottom: 24px;
   }
 }
+
+/* Ticker edge polish: infinite content, soft boundaries instead of chopped words. */
+.sco-marquee--top {
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.sco-marquee--top .sco-marquee__track {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
