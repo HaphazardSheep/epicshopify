@@ -67,30 +67,39 @@
 
 <link
   rel="modulepreload"
-  href="{{ 'utilities.js' |<link
-  rel="modulepreload"
-  href="{{ 'component.js' |<link
-  rel="modulepreload"
-  href="{{ 'section-renderer.js' |<link
-  rel="modulepreload"
-  href="{{ 'section-hydration.js' |<link
-  rel="modulepreload"
-  href="{{ 'morph.js' |{% if template.name == 'collection' or template.name == 'search' %}
-  <link
-    rel="modulepreload"
-    href="{{ 'paginated-list-aspect-ratio.js' |<link
-    rel="modulepreload"
-    href="{{ 'paginated-list.js' |{% endif %}
-
+  href="{{ 'utilities.js' | asset_url }}"
+  fetchpriority="low"
+>
 <link
   rel="modulepreload"
-  href="{{ 'focus.js' |<link
+  href="{{ 'component.js' | asset_url }}"
+  fetchpriority="low"
+>
+<link
   rel="modulepreload"
-  href="{{ 'recently-viewed-products.js' |<link
+  href="{{ 'section-renderer.js' | asset_url }}"
+  fetchpriority="low"
+>
+<link
   rel="modulepreload"
-  href="{{ 'scrolling.js' |<link
-  rel="modulepreload"
-  href="{{ 'events.js' |<script
+  href="{{ 'section-hydration.js' | asset_url }}"
+  fetchpriority="low"
+>
+
+{% if template.name == 'collection' or template.name == 'search' %}
+  <link
+    rel="modulepreload"
+    href="{{ 'paginated-list-aspect-ratio.js' | asset_url }}"
+    fetchpriority="low"
+  >
+  <link
+    rel="modulepreload"
+    href="{{ 'paginated-list.js' | asset_url }}"
+    fetchpriority="low"
+  >
+{% endif %}
+
+<script
   src="{{ 'popover-polyfill.js' | asset_url }}"
   type="module"
   fetchpriority="low"
