@@ -2897,3 +2897,13 @@ html, body, .page-wrapper {
     animation-duration: 22s;
   }
 }
+
+/* Hero interaction fix */
+.sco-hero__product {
+  pointer-events: auto;
+}
+
+.sco-hero__stamp,
+.sco-hero__orb {
+  pointer-events: none;
+}
