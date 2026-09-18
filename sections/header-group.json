@@ -108,8 +108,8 @@
     }
   },
   "order": [
-    "header_announcements_9jGBFp",
     "sco_header_ticker",
+    "header_announcements_9jGBFp",
     "header_section"
   ]
 }
