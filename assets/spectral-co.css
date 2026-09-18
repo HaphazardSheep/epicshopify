@@ -2783,3 +2783,122 @@ html, body, .page-wrapper {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== KYNZA final premium utility layer ===== */
+
+/* Product detail panel */
+@media screen and (min-width: 750px) {
+  .product-details {
+    background: rgb(255 255 255 / 0.72);
+    border: 1px solid rgb(23 18 15 / 0.09);
+    border-radius: 26px;
+    box-shadow: 0 18px 48px rgb(23 18 15 / 0.07);
+    padding: 28px !important;
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Product gallery framing */
+.product-information__media .product-media-gallery {
+  border-radius: 24px;
+}
+
+.product-information__media .product-media {
+  border-radius: 18px !important;
+  background: #f3ece7;
+  box-shadow: 0 12px 32px rgb(23 18 15 / 0.055);
+}
+
+.product-information__media .product-media__image {
+  transition: transform 420ms cubic-bezier(.2,.7,.2,1);
+}
+
+.product-information__media .product-media:hover .product-media__image {
+  transform: scale(1.018);
+}
+
+/* Product gallery controls */
+.product-information__media button {
+  border-radius: 999px;
+}
+
+.product-information__media .slideshow-controls {
+  color: #17120f;
+}
+
+/* Product purchase area */
+.product-details .shopify-payment-button,
+.product-details .shopify-payment-button__button,
+.product-details .add-to-cart-button {
+  width: 100%;
+}
+
+.product-details .add-to-cart-button {
+  min-height: 62px !important;
+  font-size: 0.82rem;
+}
+
+/* Search + collection cards use the same high-contrast product language. */
+.product-grid__item .product-title,
+.product-grid__item .product-title a,
+.predictive-search-results .product-title,
+.search-results .product-title,
+.search-results .product-title a,
+.search-results .price,
+.search-results .price-item {
+  color: #17120f !important;
+  font-weight: 800 !important;
+}
+
+.facets,
+.facets .button,
+.facets summary {
+  color: #17120f !important;
+}
+
+.facets .button,
+.facets summary {
+  border-color: #bdaea3 !important;
+  border-radius: 999px !important;
+  background: rgb(255 255 255 / 0.75);
+}
+
+/* Keep the top ticker vertically crisp and fully clipped only at its outer edge. */
+.sco-marquee--top {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sco-marquee--top .sco-marquee__track {
+  align-items: center;
+  min-width: max-content;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.sco-marquee--top .sco-marquee__group {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Performance: don't animate expensive properties on first-paint content. */
+.sco-hero__product,
+.sco-hero__product img {
+  will-change: auto;
+}
+
+@media screen and (max-width: 749px) {
+  .product-details {
+    padding-inline: 3px !important;
+  }
+
+  .product-information__media .product-media {
+    border-radius: 16px !important;
+  }
+
+  .sco-marquee--top .sco-marquee__track {
+    animation-duration: 22s;
+  }
+}
