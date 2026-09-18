@@ -1,8 +1,6 @@
 /*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated in the Shopify admin theme editor.
  * ------------------------------------------------------------
  */{
   "sections": {
@@ -349,6 +347,32 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "kynza_assurances": {
+              "type": "text",
+              "name": "KYNZA purchase assurances",
+              "settings": {
+                "text": "<div class=\"kynza-product-assurances\"><span>SECURE CHECKOUT</span><span>FAST PAYMENT OPTIONS</span><span>SUBSCRIBE ON ELIGIBLE ITEMS</span></div>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.66rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -357,6 +381,7 @@
             "variant_picker_R3rGDr",
             "kynza_subscription",
             "buy_buttons_eYQEYi",
+            "kynza_assurances",
             "text_aEtTtq"
           ]
         }
